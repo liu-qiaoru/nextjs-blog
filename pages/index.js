@@ -14,6 +14,8 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <p>[哈哈哈！这里是小刘]</p>
         <p>new-test</p>
+        <p>Test---test-1分支--</p>
+        <p>Test分支---test-2分支---</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
           <Link href="https://www.nextjs.cn/learn">our Next.js tutorial</Link>.)
