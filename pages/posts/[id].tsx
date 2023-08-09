@@ -6,7 +6,7 @@ import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.css'
 import Head from 'next/head';
 
-export const  Post = ({ postData }) => {
+export default function  Post({ postData }) {
   return (
     <Layout>
       <Head>
