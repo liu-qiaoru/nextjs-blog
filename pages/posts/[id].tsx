@@ -1,10 +1,12 @@
-import Layout from '../../components/layout'
+import React from 'react'
+
+import {Layout} from '../../components/layout'
 import {getAllPostIds, getPostData} from '../../lib/posts';
 import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.css'
 import Head from 'next/head';
 
-export default function Post({ postData }) {
+export const  Post = ({ postData }) => {
   return (
     <Layout>
       <Head>

@@ -6,10 +6,15 @@ import html from 'remark-html'
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
+interface PostData {
+  id: string,
+  date: any,
+}
+
 export function getSortedPostsData() {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames.map((fileName) => {
+  const allPostsData: PostData[] = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, "");
 
@@ -24,7 +29,7 @@ export function getSortedPostsData() {
     return {
       id,
       ...matterResult.data,
-    };
+    } as PostData;
   });
   // Sort posts by date
   return allPostsData.sort((a, b) => {

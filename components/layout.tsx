@@ -1,13 +1,16 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import React from 'react';
 
-const name = '[小刘]'
-export const siteTitle = 'Next.js Sample Website'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from './layout.module.css';
+import utilStyles from '../styles/utils.module.css';
+import Link from 'next/link';
 
-export default function Layout({ children, home }) {
+const name = '[小刘]';
+export const siteTitle = 'Next.js Sample Website';
+
+export const  Layout = (props: { children: any, home?: any }) => {
+  const {children, home} = props;
   return (
     <div className={styles.container}>
       <Head>

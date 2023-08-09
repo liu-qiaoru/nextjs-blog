@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "date-fns": "^2.30.0",
@@ -17,6 +18,9 @@
   "devDependencies": {
     "@types/node": "^20.2.5",
     "@types/react": "^18.2.7",
+    "cypress": "^12.16.0",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.13",
     "typescript": "^5.0.4"
   }
 }
